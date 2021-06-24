@@ -11,10 +11,12 @@ const Footer = class extends React.Component {
           <div className="container has-background-black has-text-white-ter">
             <div style={{ maxWidth: '100vw' }} className="columns">
               <div className="column has-text-left">
-                <div className="block has-text-weight-bold">
-                  Center for Clinical Spectroscopy
-                </div>
-                <img src={logo} alt="Kaldi" style={{ maxWidth: '14em' }} />
+                <img
+                  className="block"
+                  src={logo}
+                  alt="Kaldi"
+                  style={{ maxWidth: '14em' }}
+                />
                 <div className="block">
                   <div>221 Longwood Avenue, BLI-236</div>
                   <div>Boston, MA 02115</div>
@@ -24,12 +26,69 @@ const Footer = class extends React.Component {
                   <div>Email: spectro@partners.org</div>
                 </div>
               </div>
-              <div className="column" />
               <div className="column is-one-fifth">
                 <div className="block has-text-weight-bold">Affiliations</div>
                 <div className="block">Brigham and Women's Hospital</div>
                 <div className="block">Harvard Medical School</div>
               </div>
+              <div className="column is-one-fifth">
+                <div className="block has-text-weight-bold">
+                  Community Links
+                </div>
+                <ul className="menu-list m-0">
+                  <li>
+                    <a
+                      className="navbar-item"
+                      href="https://brainspecmed.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      BrainSpec
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="navbar-item"
+                      href="https://openmrslab.readthedocs.io/en/latest/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      OpenMRSLab
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="navbar-item"
+                      href="http://enigma.ini.usc.edu/ongoing/enigma-tbi/enigma-mrs/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      ENIGMA
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="navbar-item"
+                      href="https://www.ismrm.org/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      ISMRM
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="navbar-item"
+                      href="https://mrshub.org/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      MRSHub
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="column" />
               <div className="column is-one-fifth has-text-right-tablet has-text-left-mobile">
                 <section className="menu">
                   <div className="block has-text-weight-bold">
