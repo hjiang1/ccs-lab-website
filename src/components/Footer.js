@@ -1,22 +1,28 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import logo from '../img/ccsbwh-light.png'
+import logo from '../img/ccsbwh-dark.png'
+import hmslogo from '../img/hms-logo.svg'
+import bwhlogo from '../img/bwh-logo.svg'
 
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="footer has-background-black has-text-white-ter py-6 px-5">
-        <div className="content has-background-black has-text-white-ter">
-          <div className="container has-background-black has-text-white-ter">
-            <div style={{ maxWidth: '100vw' }} className="columns">
+      <footer className="footer has-background-light has-text-black-ter py-6 px-5">
+        <div className="content has-background-light has-text-black-ter">
+          <div className="container has-background-light has-text-black-terr">
+            <div style={{ maxWidth: '100vw' }} className="columns ">
               <div className="column has-text-left">
-                <img
-                  className="block"
-                  src={logo}
-                  alt="Kaldi"
-                  style={{ maxWidth: '14em' }}
-                />
+                <div className="block">
+                  <Link to="/">
+                    <img
+                      className="block"
+                      src={logo}
+                      alt="Center for Clinical Spectroscopy"
+                      style={{ maxWidth: '14em' }}
+                    />
+                  </Link>
+                </div>
                 <div className="block">
                   <div>221 Longwood Avenue, BLI-236</div>
                   <div>Boston, MA 02115</div>
@@ -27,15 +33,45 @@ const Footer = class extends React.Component {
                 </div>
               </div>
               <div className="column is-one-fifth">
-                <div className="block has-text-weight-bold">Affiliations</div>
-                <div className="block">Brigham and Women's Hospital</div>
-                <div className="block">Harvard Medical School</div>
+                <div className="block has-text-weight-bold">Affiliates</div>
+                <section className="menu">
+                  <div className="block">
+                    <a
+                      className=""
+                      href="https://www.brighamandwomens.org/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        className="block"
+                        src={bwhlogo}
+                        alt="Brigham and Women's Hospital"
+                        style={{ maxWidth: '14em' }}
+                      />
+                    </a>
+                  </div>
+                  <div className="block">
+                    <a
+                      className=""
+                      href="https://hms.harvard.edu/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        className="block"
+                        src={hmslogo}
+                        alt="Harvard Medical School"
+                        style={{ maxWidth: '14em' }}
+                      />
+                    </a>
+                  </div>
+                </section>
               </div>
-              <div className="column is-one-fifth">
+              <div className="column is-one-fifth ">
                 <div className="block has-text-weight-bold">
                   Community Links
                 </div>
-                <ul className="menu-list m-0">
+                <ul className="menu-list m-0 ">
                   <li>
                     <a
                       className="navbar-item"
@@ -89,12 +125,12 @@ const Footer = class extends React.Component {
                 </ul>
               </div>
               <div className="column" />
-              <div className="column is-one-fifth has-text-right-tablet has-text-left-mobile">
+              <div className="column is-one-fifth has-text-right-tablet">
                 <section className="menu">
                   <div className="block has-text-weight-bold">
                     Site Navigation
                   </div>
-                  <ul className="menu-list m-0 has-text-right-tablet has-text-left-mobile">
+                  <ul className="menu-list m-0 has-text-right-tablet">
                     <li>
                       <Link className="navbar-item" to="/">
                         Home
