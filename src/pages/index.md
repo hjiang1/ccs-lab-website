@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
-image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+title: Center for Clinical Spectroscopy
+image: /img/mrs-jumbotron.jpg
+heading: Center for Clinical Spectroscopy
+subheading: Brigham and Women's Hospital and Harvard Medical School
 mainpitch:
   title: Why Kaldi
   description: >
