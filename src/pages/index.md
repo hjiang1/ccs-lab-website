@@ -5,12 +5,10 @@ image: /img/mrs-jumbotron.jpg
 heading: Center for Clinical Spectroscopy
 subheading: Brigham and Women's Hospital and Harvard Medical School
 mainpitch:
-  title: Why Kaldi
+  title: About the Center for Clinical Spectroscopy
   description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    The Center for Clinical Spectroscopy is a translational and clinical
+    research laboratoryseeking to bring MR Spectroscopy clinical practice.
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
@@ -19,12 +17,12 @@ description: >-
 intro:
   blurbs:
     - image: /img/coffee.png
+      title: 2-Hydroxyglutarate
       text: >
-        We sell green and roasted coffee beans that are sourced directly from
-        independent farmers and farm cooperatives. We’re proud to offer a
-        variety of coffee beans grown with great care for the environment and
-        local communities. Check our post or contact us directly for current
-        availability.
+        In isocitrate dehydrogense-1-mutant gliomas, large amounts of
+        2-hydroxyglutarate produced in the brain. 2HG is detectable via MRS and can
+        serve as a crucial biomarker for the diagnosis of low grade astrocytomas
+        and oligodendrogliomas. 
     - image: /img/coffee-gear.png
       text: >
         We offer a small, but carefully curated selection of brewing gear and
