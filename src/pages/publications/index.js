@@ -22,7 +22,7 @@ export default class PublicationPage extends React.Component {
               padding: '1rem',
             }}
           >
-            Latest Publications
+            Publications
           </h1>
         </div>
         <section className="section">

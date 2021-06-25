@@ -2,7 +2,7 @@
 templateKey: index-page
 title: Center for Clinical Spectroscopy
 image: /img/mrs-jumbotron.jpg
-heading: Center for Clinical Spectroscopy
+heading: Featured Projects
 subheading: Brigham and Women's Hospital and Harvard Medical School
 mainpitch:
   title: About the Center for Clinical Spectroscopy
@@ -10,10 +10,7 @@ mainpitch:
     The Center for Clinical Spectroscopy is a translational and clinical
     research laboratoryseeking to bring MR Spectroscopy clinical practice.
 description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  There are currently N projects.
 intro:
   blurbs:
     - image: /img/coffee.png
