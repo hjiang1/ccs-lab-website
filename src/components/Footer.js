@@ -1,47 +1,164 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import logo from '../img/logo.svg'
-import facebook from '../img/social/facebook.svg'
-import instagram from '../img/social/instagram.svg'
-import twitter from '../img/social/twitter.svg'
-import vimeo from '../img/social/vimeo.svg'
+import logo from '../img/ccsbwh-dark.png'
+import hmslogo from '../img/hms-logo.svg'
+import bwhlogo from '../img/bwh-logo.svg'
 
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="footer has-background-black has-text-white-ter">
-        <div className="content has-text-centered">
-          <img
-            src={logo}
-            alt="Kaldi"
-            style={{ width: '14em', height: '10em' }}
-          />
-        </div>
-        <div className="content has-text-centered has-background-black has-text-white-ter">
-          <div className="container has-background-black has-text-white-ter">
-            <div style={{ maxWidth: '100vw' }} className="columns">
-              <div className="column is-4">
+      <footer className="footer has-background-light has-text-black-ter py-6 px-5">
+        <div className="content has-background-light has-text-black-ter">
+          <div className="container has-background-light has-text-black-terr">
+            <div style={{ maxWidth: '100vw' }} className="columns ">
+              <div className="column has-text-left">
+                <div className="block">
+                  <Link to="/">
+                    <img
+                      className="block"
+                      src={logo}
+                      alt="Center for Clinical Spectroscopy"
+                      style={{ maxWidth: '14em' }}
+                    />
+                  </Link>
+                </div>
+                <div className="block">
+                  <div>221 Longwood Avenue, BLI-236</div>
+                  <div>Boston, MA 02115</div>
+                </div>
+                <div className="block">
+                  <div>Phone: (617) 525-5086</div>
+                  <div>Email: spectro@partners.org</div>
+                </div>
+              </div>
+              <div className="column is-one-fifth">
+                <div className="block has-text-weight-bold">Affiliates</div>
                 <section className="menu">
-                  <ul className="menu-list">
+                  <div className="block">
+                    <a
+                      className=""
+                      href="https://www.brighamandwomens.org/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        className="block"
+                        src={bwhlogo}
+                        alt="Brigham and Women's Hospital"
+                        style={{ maxWidth: '14em' }}
+                      />
+                    </a>
+                  </div>
+                  <div className="block">
+                    <a
+                      className=""
+                      href="https://hms.harvard.edu/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        className="block"
+                        src={hmslogo}
+                        alt="Harvard Medical School"
+                        style={{ maxWidth: '14em' }}
+                      />
+                    </a>
+                  </div>
+                </section>
+              </div>
+              <div className="column is-one-fifth ">
+                <div className="block has-text-weight-bold">
+                  Community Links
+                </div>
+                <ul className="menu-list m-0 ">
+                  <li>
+                    <a
+                      className="navbar-item"
+                      href="https://brainspecmed.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      BrainSpec
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="navbar-item"
+                      href="https://openmrslab.readthedocs.io/en/latest/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      OpenMRSLab
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="navbar-item"
+                      href="http://enigma.ini.usc.edu/ongoing/enigma-tbi/enigma-mrs/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      ENIGMA
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="navbar-item"
+                      href="https://www.ismrm.org/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      ISMRM
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="navbar-item"
+                      href="https://mrshub.org/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      MRSHub
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="column" />
+              <div className="column is-one-fifth has-text-right-tablet">
+                <section className="menu">
+                  <div className="block has-text-weight-bold">
+                    Site Navigation
+                  </div>
+                  <ul className="menu-list m-0 has-text-right-tablet">
                     <li>
-                      <Link to="/" className="navbar-item">
+                      <Link className="navbar-item" to="/">
                         Home
                       </Link>
                     </li>
                     <li>
+                      <Link className="navbar-item" to="/projects">
+                        Projects
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="navbar-item" to="/publications">
+                        Latest Publications
+                      </Link>
+                    </li>
+                    <li>
                       <Link className="navbar-item" to="/about">
-                        About
+                        About MRS
                       </Link>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/products">
-                        Products
+                      <Link className="navbar-item" to="/members">
+                        Members
                       </Link>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/contact/examples">
-                        Form Examples
+                      <Link className="navbar-item" to="/contact">
+                        Contact
                       </Link>
                     </li>
                     <li>
@@ -56,53 +173,6 @@ const Footer = class extends React.Component {
                     </li>
                   </ul>
                 </section>
-              </div>
-              <div className="column is-4">
-                <section>
-                  <ul className="menu-list">
-                    <li>
-                      <Link className="navbar-item" to="/blog">
-                        Latest Stories
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/contact">
-                        Contact
-                      </Link>
-                    </li>
-                  </ul>
-                </section>
-              </div>
-              <div className="column is-4 social">
-                <a title="facebook" href="https://facebook.com">
-                  <img
-                    src={facebook}
-                    alt="Facebook"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="twitter" href="https://twitter.com">
-                  <img
-                    className="fas fa-lg"
-                    src={twitter}
-                    alt="Twitter"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="instagram" href="https://instagram.com">
-                  <img
-                    src={instagram}
-                    alt="Instagram"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="vimeo" href="https://vimeo.com">
-                  <img
-                    src={vimeo}
-                    alt="Vimeo"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
               </div>
             </div>
           </div>
