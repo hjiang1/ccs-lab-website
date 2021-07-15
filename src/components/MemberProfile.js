@@ -5,20 +5,22 @@ import PreviewCompatibleImage from './PreviewCompatibleImage'
 const MemberProfile = ({
   memberInfo: { image, name, title, introduction },
 }) => {
+  const introductionToHTML = introduction
+    .split(`\n\n`)
+    .map((paragraph) => `<p>${paragraph.replace(/\n/g, `<br>`)}</p>`)
+    .join(``)
+
   return (
     <section className="section">
-      <div className="columns is-multiline">
-        <div
-          style={{
-            width: '240px',
-            display: 'inline-block',
-          }}
-        >
+      <div className="columns">
+        <div className="column is-one-quarter">
           <PreviewCompatibleImage imageInfo={{ image }} />
         </div>
-        <div>{name}</div>
-        <div>{title}</div>
-        <div>{introduction}</div>
+        <div className="column">
+          <div className="title">{name}</div>
+          <div className="subtitle">{title}</div>
+          <div dangerouslySetInnerHTML={{ __html: introductionToHTML }} />
+        </div>
       </div>
     </section>
   )

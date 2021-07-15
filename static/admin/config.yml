@@ -73,4 +73,6 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
           - {label: Members, name: members, widget: list, fields: [{label: Portrait, name: image, widget: image}, {label: Name, name: name, widget: string}, {label: Title, name: title, widget: string}, {label: Introduction, name: introduction, widget: markdown}]}
-         
+          - {label: Fellows, name: fellows, widget: list, fields: [{label: Portrait, name: image, widget: image}, {label: Name, name: name, widget: string}, {label: Title, name: title, widget: string}, {label: Introduction, name: introduction, widget: markdown}]}
+          - {label: Students, name: students, widget: list, fields: [{label: Portrait, name: image, widget: image}, {label: Name, name: name, widget: string}, {label: Title, name: title, widget: string}, {label: Introduction, name: introduction, widget: markdown}]}
+          - {label: Alumni, name: alumni, widget: object, fields: [{label: Members, name: members, widget: list}, {label: Fellows, name: fellows, widget: list}, {label: Harvard Catalyst, name: catalyst, widget: list}, {label: Students, name: students, widget: list}]}

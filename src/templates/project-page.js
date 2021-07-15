@@ -18,8 +18,6 @@ export const ProjectPageTemplate = ({
   fullImage,
   pricing,
 }) => {
-  console.log('ppt', intro.blurbs)
-
   return (
     <div className="content">
       <div
