@@ -3,10 +3,6 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import MemberProfile from '../components/MemberProfile'
-import Features from '../components/Features'
-import Testimonials from '../components/Testimonials'
-import Pricing from '../components/Pricing'
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 export const MemberPageTemplate = ({
   image,
@@ -16,7 +12,6 @@ export const MemberPageTemplate = ({
   students,
   alumni,
 }) => {
-  console.log(members)
   return (
     <div className="content">
       <div
@@ -103,7 +98,7 @@ MemberPageTemplate.propTypes = {
       image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
       name: PropTypes.string,
       title: PropTypes.string,
-      introduction: PropTypes.array,
+      introduction: PropTypes.any,
     })
   ),
   fellows: PropTypes.arrayOf(
@@ -111,7 +106,7 @@ MemberPageTemplate.propTypes = {
       image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
       name: PropTypes.string,
       title: PropTypes.string,
-      introduction: PropTypes.array,
+      introduction: PropTypes.any,
     })
   ),
   students: PropTypes.arrayOf(
@@ -119,7 +114,7 @@ MemberPageTemplate.propTypes = {
       image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
       name: PropTypes.string,
       title: PropTypes.string,
-      introduction: PropTypes.array,
+      introduction: PropTypes.any,
     })
   ),
   alumni: PropTypes.shape({
@@ -131,7 +126,6 @@ MemberPageTemplate.propTypes = {
 }
 
 const MemberPage = ({ data }) => {
-  console.log(data)
   const { frontmatter } = data.markdownRemark
 
   return (

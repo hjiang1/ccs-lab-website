@@ -30,30 +30,25 @@ members:
   - image: /img/members-vicky.png
     name: Huijun ‘Vicky’ Liao, BS, MR-RT
     title: Research Coordinator
-    introduction:
-      - abv
+    introduction: sdsdsjhsd
 fellows:
   - image: /img/coffee.png
     name: Katie Morigaki Breedlove, PhD, ATC
     title: Postdoctoral Fellow
-    introduction:
-      - abc
+    introduction: asdasd
   - image: /img/coffee.png
     name: Sanghoon Kim, MD
     title: Research Fellow
-    introduction:
-      - abv
+    introduction: asasd
 students:
   - image: /img/coffee.png
     name: Sam Jiang, BS
     title: Research Assistant
-    introduction:
-      - abc
+    introduction: asdasd
   - image: /img/coffee.png
     name: Wufan Zhao
     title: Research Assistant
-    introduction:
-      - abv
+    introduction: asdasd
 alumni:
   members:
     - Joshua Ladner, MD

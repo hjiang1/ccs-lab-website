@@ -6,23 +6,21 @@ const MemberProfile = ({
   memberInfo: { image, name, title, introduction },
 }) => {
   return (
-    <div className="columns is-multiline">
-      <div
-        style={{
-          width: '240px',
-          display: 'inline-block',
-        }}
-      >
-        <PreviewCompatibleImage imageInfo={image} />
+    <section className="section">
+      <div className="columns is-multiline">
+        <div
+          style={{
+            width: '240px',
+            display: 'inline-block',
+          }}
+        >
+          <PreviewCompatibleImage imageInfo={{ image }} />
+        </div>
+        <div>{name}</div>
+        <div>{title}</div>
+        <div>{introduction}</div>
       </div>
-      <div>{name}</div>
-      <div>{title}</div>
-      <div>
-        {introduction.map((paragraph, i) => (
-          <div key={i}>{paragraph}</div>
-        ))}
-      </div>
-    </div>
+    </section>
   )
 }
 
@@ -31,7 +29,7 @@ MemberProfile.propTypes = {
     image: PropTypes.any,
     name: PropTypes.string,
     title: PropTypes.string,
-    introduction: PropTypes.array,
+    introduction: PropTypes.any,
   }),
 }
 

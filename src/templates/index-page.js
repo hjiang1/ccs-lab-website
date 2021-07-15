@@ -24,7 +24,7 @@ export const IndexPageTemplate = ({
         })`,
         backgroundPosition: `top left`,
         backgroundAttachment: `fixed`,
-        height: '90vh',
+        height: 'calc(100vh - 5rem)',
       }}
     >
       <div
